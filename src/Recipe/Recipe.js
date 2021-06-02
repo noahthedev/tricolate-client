@@ -5,7 +5,7 @@ export default class Recipe extends React.Component {
     return (
       <>
         <h2>{this.props.name}</h2>
-        <p>{this.props.recipes[this.props.name].abstract}</p>
+        <p>{this.props.abstract}</p>
       </>
     )
   }
