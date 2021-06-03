@@ -3,22 +3,15 @@ import RECIPES from '../store'
 
 export default class RecipePage extends React.Component {
   render() {
+    const { recipeId } = this.props.match.params
+    const recipe = RECIPES[recipeId] 
     return (
       <>
-      <h1>title</h1>
-      <p>coffee</p>
-      <p>grind</p>
-      <p>water</p>
-      <ul>
-        <li>
-          <h3>Step 1</h3>
-          <p>Pour 35g of water, pick up and swirl the brewer. Allow to bloom for 35 seconds.</p>
-        </li>
-        <li>
-          <h3>Step 2</h3>
-          <p>Pour remaining water and swirl again. Your total brew should be between 03:00-04:00 minutes.</p>
-        </li>
-      </ul>
+        <h1>{recipe.title}</h1>
+        <p>coffee: {recipe.coffee}g</p>
+        <p>grind: {recipe.grind}</p>
+        <p>water: {recipe.water}g</p>
+        <p>method:<br/>{recipe.method}</p>
       </>
     )
   }

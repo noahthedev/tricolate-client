@@ -2,7 +2,8 @@ import React from 'react'
 import NavBar from '../NavBar/NavBar'
 import Home from '../Home/Home'
 import CreateRecipe from '../CreateRecipe/CreateRecipe'
-import { Route, Link } from 'react-router-dom'
+import RecipePage from '../RecipePage/RecipePage'
+import { Route } from 'react-router-dom'
 import './App.css'
 
 export default class App extends React.Component {
@@ -13,6 +14,7 @@ export default class App extends React.Component {
         <NavBar/>
         <Route exact path="/" component={Home}/>
         <Route path="/createrecipe" component={CreateRecipe} />
+        <Route path="/recipes/:recipeId" component ={RecipePage}/>
         <footer>Copyright 2021 Noah Roberts</footer>
       </div>
     )

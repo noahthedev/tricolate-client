@@ -1,5 +1,6 @@
 const RECIPES = [
     {
+      id: 1,
       title: 'Tricolate Official Traditional',
       abstract: 'A Tricolate recipe using a traditional pourover brew ratio.',
       coffee: '15',
@@ -8,6 +9,7 @@ const RECIPES = [
       method: 'Pour 35g of water, pick up and swirl the brewer. Allow to bloom for 35 seconds. Pour the remaining water and swirl again. Your total brew should be between 03:00-04:00 minutes.'
     },
     {
+      id: 2,
       title: 'Tricolate Official High Extraction',
       abstract: 'A Tricolate recipe using a high extraction brew ratio.',
       coffee: '10',

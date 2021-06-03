@@ -7,6 +7,7 @@ export default class RecipeList extends React.Component {
     const recipes = Object.keys(RECIPES).map((idx) => {
       return (
         <Recipe
+          id={idx}
           name={RECIPES[idx].title}
           abstract={RECIPES[idx].abstract}
         />
