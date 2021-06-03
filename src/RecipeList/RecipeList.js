@@ -1,15 +1,16 @@
 import React from 'react'
-import Recipe from '../Recipe/Recipe'
-import RECIPES from '../store'
+import Recipe from '../RecipeAbstract/RecipeAbstract'
+import RECIPES from '../recipes'
 
 export default class RecipeList extends React.Component {
   render() {
-    const recipes = Object.keys(RECIPES).map((idx) => {
+    const recipes = Object.keys(RECIPES).map((id) => {
       return (
         <Recipe
-          id={idx}
-          name={RECIPES[idx].title}
-          abstract={RECIPES[idx].abstract}
+          key={id}
+          id={id}
+          name={RECIPES[id].title}
+          abstract={RECIPES[id].abstract}
         />
       )
     })

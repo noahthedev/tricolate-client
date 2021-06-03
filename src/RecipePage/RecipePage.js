@@ -1,5 +1,5 @@
 import React from 'react'
-import RECIPES from '../store'
+import RECIPES from '../recipes'
 
 export default class RecipePage extends React.Component {
   render() {
