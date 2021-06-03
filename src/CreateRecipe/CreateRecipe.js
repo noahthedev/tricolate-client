@@ -4,7 +4,12 @@ export default class CreateRecipe extends React.Component {
   render() {
     return (
       <div>
-        create recipe
+        <form>
+          <label htmlFor='title-input'>Title</label>
+          <input type='text' id='title-input' />
+          <label htmlFor=''
+
+        </form>
       </div>
     )
   }

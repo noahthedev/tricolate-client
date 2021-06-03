@@ -1,5 +1,6 @@
 import React from 'react'
 import RECIPES from '../recipes'
+import './RecipePage.css'
 
 export default class RecipePage extends React.Component {
   render() {
@@ -12,6 +13,7 @@ export default class RecipePage extends React.Component {
         <p>grind: {recipe.grind}</p>
         <p>water: {recipe.water}g</p>
         <p>method:<br/>{recipe.method}</p>
+        <p><a className="link" href={recipe.link}>link</a></p>
       </>
     )
   }
