@@ -6,7 +6,7 @@ export default class RecipeAbstract extends React.Component {
   render() {
     return (
       <Link to={`/recipes/${this.props.recipe.id}`}>
-        <div className="recipe">
+        <div className='recipe'>
           <h2>{this.props.recipe.title}</h2>
           <p>{this.props.recipe.abstract}</p>
         </div>

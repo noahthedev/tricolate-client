@@ -1,38 +1,28 @@
 import React from 'react'
 import RecipeAbstract from '../RecipeAbstract/RecipeAbstract'
 import RECIPES from '../recipes'
+import './RecipeList.css'
 
 export default class RecipeList extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      sortOrder: 'ascending'
+      isAscending: true
     }
   }
 
-  toggleSort = () => {
-    if (this.state.sortOrder === 'ascending') {
-      this.setState({
-        sortOrder: 'descending'
-      })
-    }
-    else if (this.state.sortOrder === 'descending') {
-      this.setState({
-        sortOrder: 'ascending'
-      })
-    }
-  }
+  toggleSort = () => {this.setState({ isAscending: !this.state.isAscending })}
 
   sortRecipes = (arr) => {
     let sortedRecipes = []
 
-    if (this.state.sortOrder === 'ascending') {
+    if (this.state.isAscending === true) {
       sortedRecipes = arr.sort((a, b) => {
         return a.id - b.id
       }) 
     }
-    else if (this.state.sortOrder === 'descending') {
+    else if (this.state.isAscending === false) {
       sortedRecipes = arr.sort((a, b) => {
         return b.id - a.id
       })
@@ -41,7 +31,6 @@ export default class RecipeList extends React.Component {
   }
   render() {
     const sortedRecipes = this.sortRecipes(RECIPES)
-    console.log(sortedRecipes);
     const recipes = sortedRecipes.map((recipe) => {
       return (
         <RecipeAbstract
@@ -52,10 +41,10 @@ export default class RecipeList extends React.Component {
     })
 
     return (
-      <>
-        <button onClick={this.toggleSort}></button>
+      <div className='recipe-list'>
+        {/*<button onClick={this.toggleSort}></button>*/}
         {recipes}
-      </>
+      </div>
     )
   }
 }

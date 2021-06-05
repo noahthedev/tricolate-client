@@ -8,16 +8,18 @@ export default class Home extends React.Component {
     return (
       <div>
         <h1>Brew with Tricolate</h1>
-        <div className='img-container'>
-          <img src={tricolateJpg} alt='tricolate brewer'/>
-        </div>
-        <div className='intro'>
-        <p>
-          The Tricolate is a revolutionary zero-bypass coffee brewer that allows you to experiment with brew ratios far beyond what is acceptable with a traditional pourover brewer (v60, Kalita, etc.)
-        </p>
-        <p>
-          Brew With Tricolate is a website designed to provide you with a place to find successful recipes from coffee professionals and enthusiasts and allow you to share your successful creations.
-        </p>
+        <div className='flex-container'>
+          <div className='img-container'>
+            <img src={tricolateJpg} alt='tricolate brewer'/>
+          </div>
+          <div className='intro'>
+          <p>
+            The <a className='home-link' href='https://tricolate.com/'>Tricolate</a> is a revolutionary zero-bypass coffee brewer that allows you to experiment with brew ratios far beyond what is acceptable with a traditional pourover brewer (v60, Kalita, etc.)
+          </p>
+          <p>
+            Brew With Tricolate is a website designed to provide you with a place to find successful recipes from coffee professionals and enthusiasts and allow you to share your personal creations.
+          </p>
+          </div>
         </div>
         <RecipeList/>
       </div>

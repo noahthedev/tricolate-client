@@ -13,7 +13,7 @@ export default class RecipePage extends React.Component {
         <p>grind: {recipe.grind}</p>
         <p>water: {recipe.water}g</p>
         <p>method:<br/>{recipe.method}</p>
-        {recipe.link ?? <p><a className="link" href={recipe.link}>link</a></p>}
+        {recipe.link ? <p><a className="link" href={recipe.link}>link</a></p> : ''}
       </>
     )
   }
