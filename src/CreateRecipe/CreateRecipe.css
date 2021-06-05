@@ -1,0 +1,18 @@
+
+
+.recipe-form label {
+  font-size: large;
+  display: block;
+}
+
+.recipe-form input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.recipe-form textarea {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}

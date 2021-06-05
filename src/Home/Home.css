@@ -1,0 +1,12 @@
+.intro {
+  margin-bottom: 50px;
+}
+
+.img-container {
+  text-align: center;
+}
+
+img {
+  object-fit: scale-down;
+  width: 80%;
+}

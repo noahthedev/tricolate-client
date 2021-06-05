@@ -2,7 +2,7 @@ const RECIPES = [
     {
       id: 1,
       title: 'Tricolate official traditional',
-      abstract: 'A Tricolate recipe using a traditional pourover brew ratio.',
+      abstract: 'Official Tricolate recipe using a traditional pourover brew ratio.',
       coffee: 15,
       grind: 'medium coarse',
       water: 250,
@@ -12,7 +12,7 @@ const RECIPES = [
     {
       id: 2,
       title: 'Tricolate official high extraction',
-      abstract: 'A Tricolate recipe using a high extraction brew ratio.',
+      abstract: 'Official Tricolate recipe using a high extraction brew ratio.',
       coffee: 10,
       grind: 'fine',
       water: 220,
@@ -22,7 +22,7 @@ const RECIPES = [
     {
       id: 3,
       title: 'Scott Rao 1/20/21',
-      abstract: 'A demo recipe from Scott Rao',
+      abstract: 'A demo recipe from Scott Rao.',
       coffee: 18,
       grind: 'fine',
       water: 360,
@@ -32,7 +32,7 @@ const RECIPES = [
     {
       id: 4,
       title: 'Sang Ho Park iced brew',
-      abstract: 'a Tricolate brew for the summer months',
+      abstract: 'A Tricolate brew for the summer months.',
       coffee: 14.5,
       grind: 'fine, 9 on Weber EG1',
       water: 260,

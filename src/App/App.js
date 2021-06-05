@@ -11,11 +11,13 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <NavBar/>
-        <Route exact path="/" component={Home}/>
-        <Route path="/createrecipe" component={CreateRecipe} />
-        <Route path="/recipes/:recipeId" component ={RecipePage}/>
-        <footer>Copyright 2021 Noah Roberts</footer>
+        <div className="content-wrap">
+          <NavBar/>
+          <Route exact path="/" component={Home}/>
+          <Route path="/createrecipe" component={CreateRecipe} />
+          <Route path="/recipes/:recipeId" component ={RecipePage}/>
+          <footer>Copyright 2021 Noah Roberts</footer>
+        </div>
       </div>
     )
   }  
