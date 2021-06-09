@@ -1,6 +1,8 @@
 @media all and (min-width: 800px) {
   .recipe-list {
-    width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 } 

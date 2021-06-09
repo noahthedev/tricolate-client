@@ -5,12 +5,14 @@ import './RecipeAbstract.css'
 export default class RecipeAbstract extends React.Component {
   render() {
     return (
-      <Link to={`/recipes/${this.props.recipe.id}`}>
+      
         <div className='recipe'>
+        <Link to={`/recipes/${this.props.recipe.id}`}>
           <h2>{this.props.recipe.title}</h2>
           <p>{this.props.recipe.abstract}</p>
+          </Link>  
         </div>
-      </Link>
+      
     )
   }
 }

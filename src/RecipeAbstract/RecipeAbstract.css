@@ -3,5 +3,13 @@
   border-radius: 15px;
   padding: 1px 1px 1px 15px;
   margin-bottom: 15px;
+  flex-basis: 48%;
 }
+
+@media all and (min-width: 800px) {
+  .recipe {
+    margin: 8px;
+  }
+} 
+
 
