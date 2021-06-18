@@ -22,13 +22,22 @@ export default class App extends React.Component {
        throw new Error(response.statusText)
      }) 
      .then(recipes => this.setState({recipes}))
-     .catch(error => console.error(error.message))
-   }
+     .catch(error => console.error(error.message)) 
+  }
+
+  handleAddRecipe = recipe => {
+    this.setState({
+      recipes: [
+        ...this.state.recipes, recipe
+      ]
+    })
+  }
   
 
   render() {
     const value = {
-      recipes: this.state.recipes
+      recipes: this.state.recipes,
+      addRecipe: this.handleAddRecipe
     }
     return (
       <ApiContext.Provider value={value}>
