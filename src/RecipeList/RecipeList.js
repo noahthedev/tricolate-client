@@ -1,18 +1,24 @@
 import React from 'react'
 import RecipeAbstract from '../RecipeAbstract/RecipeAbstract'
-import RECIPES from '../recipes'
+//import RECIPES from '../recipes'
 import './RecipeList.css'
+import { config } from '../config'
 
 export default class RecipeList extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isAscending: true
-    }
+  state = {
+    isAscending: true,
+    recipes: []
   }
 
-  toggleSort = () => {this.setState({ isAscending: !this.state.isAscending })}
+  componentDidMount() {
+   fetch(`${config.API_ENDPOINT}/recipes`)
+    .then(response => response.json())  
+    .then(recipes =>
+      this.setState({recipes}))
+  }
+  
+
+  /*toggleSort = () => {this.setState({ isAscending: !this.state.isAscending })}
 
   sortRecipes = (arr) => {
     let sortedRecipes = []
@@ -28,10 +34,11 @@ export default class RecipeList extends React.Component {
       })
     }
     return sortedRecipes;
-  }
+  }*/
+
   render() {
-    const sortedRecipes = this.sortRecipes(RECIPES)
-    const recipes = sortedRecipes.map((recipe) => {
+    /*const sortedRecipes = this.sortRecipes(RECIPES)*/
+    const recipes = this.state.recipes.map((recipe) => {
       return (
         <RecipeAbstract
           key={recipe.id}
