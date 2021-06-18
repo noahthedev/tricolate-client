@@ -1,11 +1,14 @@
 import React from 'react'
-import RECIPES from '../recipes'
 import './RecipePage.css'
+import ApiContext from '../ApiContext'
 
 export default class RecipePage extends React.Component {
+  static contextType = ApiContext
+
   render() {
     const { recipeId } = this.props.match.params
-    const recipe = RECIPES[recipeId - 1] 
+    const { recipes=[] } = this.context
+    const recipe = recipes[recipeId - 1] 
     return (
       <>
         <h1>{recipe.title}</h1>
