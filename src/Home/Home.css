@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.img-container img {
+  border-radius: 10px;
+}
+
 .home-link {
   color: blue;
 }
