@@ -3,6 +3,12 @@ import './RecipePage.css'
 import ApiContext from '../ApiContext'
 
 export default class RecipePage extends React.Component {
+  static defaultProps = {
+    match: {
+      params: {}
+    }
+  }
+
   static contextType = ApiContext
 
   render() {

@@ -63,7 +63,7 @@ export default class CreateRecipe extends React.Component {
           </div>
           <div>
             <label htmlFor='method-input'>Method</label>
-            <textarea id='method-input' placeholder='List all steps and process here.' name='recipe-method' required/>
+            <textarea id='method-input' placeholder='List all steps and process here.' name='recipe-method' rows='4' required/>
           </div>
           <div>
             <label htmlFor='link-input'>Link</label>

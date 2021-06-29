@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import './RecipeAbstract.css'
 
 export default class RecipeAbstract extends React.Component {
+  static defaultProps = {
+    recipe: {}
+  }
   render() {
     return (
       
