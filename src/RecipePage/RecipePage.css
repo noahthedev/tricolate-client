@@ -4,6 +4,12 @@
 }
 
 .recipe-whole {
- width: 50%; 
- margin: 50px;
+  margin: 5px;
+}
+
+@media all and (min-width: 800px) {
+  .recipe-whole {
+  width: 50%; 
+  margin: 50px;
+  }
 }
