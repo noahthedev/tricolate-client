@@ -7,24 +7,9 @@ export default class RecipeList extends React.Component {
   static contextType = ApiContext
   /*state = {
     isAscending: true,
-    recipes: []
   }
 
-  componentDidMount() {
-   fetch(`${config.API_ENDPOINT}/recipes`)
-    .then(response => {
-      if (response.ok) {
-        return response.json()
-      }
-      throw new Error(response.statusText)
-    }) 
-    .then(recipes => this.setState({recipes}))
-    .catch(error => console.error(error.message))
-  }*/   
-  
-  
-
-  /*toggleSort = () => {this.setState({ isAscending: !this.state.isAscending })}
+  toggleSort = () => {this.setState({ isAscending: !this.state.isAscending })}
 
   sortRecipes = (arr) => {
     let sortedRecipes = []
