@@ -39,7 +39,7 @@ export default class CreateRecipe extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='recipe-form-div'>
         <form className='recipe-form' onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor='title-input'>Title</label>
@@ -69,7 +69,9 @@ export default class CreateRecipe extends React.Component {
             <label htmlFor='link-input'>Link</label>
             <input type='url' id='link-input' placeholder='URL' name='recipe-link'/>
           </div>
+          <div className='button-container'>
           <button type='submit'>Add Recipe</button>
+          </div>
         </form>
       </div>
     )
