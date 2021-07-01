@@ -14,6 +14,14 @@ This is the React client for "[Brew with Tricolate](https://www.brewwithtricolat
 
 ## Screenshots
 
+### Landing Page
+![landing page](screenshots/landing-page.png)
+ 
+### Single Recipe Page 
+![single recipe page](screenshots/single-recipe.png)
+
+### Create Recipe Page
+![create recipe page](screenshots/create-recipe.png)
 
 
 
